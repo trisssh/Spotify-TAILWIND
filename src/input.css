@@ -14,5 +14,17 @@
     .header__nav.open{
         @apply h-[100vh];
     }
+
+    
+}
+
+.toggle-menu.open span:first-child {
+		transform: rotate(45deg) translate(3px, 3.5px);	
+}
+.toggle-menu.open span:nth-child(2) {
+    display:none;
+}
+.toggle-menu.open span:last-child {
+    transform: rotate(-45deg) translate(3px, -3.5px);
 }
 

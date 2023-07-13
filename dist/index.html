@@ -9,38 +9,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header class="header bg-black lg:px-40 pt-2">
+    <header class="header bg-black lg:px-40">
         <div class="container ">
             <nav class="header__wrapper flex justify-between lg:flex lg:justify-center px-3">
                 <!-- <div class="branding" >
                     <h1 class="text-green-700">SPOTIFY</h1>
                 </div> -->
 
-                <div class="branding__footer text-green-700 mb-4">
-                    <h1 class="text-2xl font-bold lg:flex lg:justify-center">SPOTIFY</h1>
+                <div class="branding__footer text-green-700 m-2">
+                    <h1 class="text-2xl font-bold lg:flex lg:justify-center cursor-pointer">SPOTIFY</h1>
                 </div>
 
                 <div class="header__nav lg:static lg:h-auto">
-                    <ul class="flex flex-col justify-end lg:flex-row lg:gap-5 bg-black gap-1">
-                        <li><a href="#" class="text-white text-base">Premium</a></li>
-                        <li><a href="#" class="text-white text-base">Support</a></li>
-                        <li><a href="#" class="text-white text-base">Download</a></li>
-                            <!-- line -->      <li><a href="#" class="text-white text-base"> | </a></li>
-                        <li><a href="#" class="text-white text-base">Sign up</a></li>
-                        <li><a href="#" class="text-white text-base">Log in</a></li>
+                    <ul class="flex flex-col justify-end lg:flex-row lg:gap-5 bg-black gap-1 p-3">
+                        <li><a href="#" class="text-white hover:text-green-600  font-bold text-4xl lg:text-base">Premium</a></li>
+                        <li><a href="#" class="text-white hover:text-green-600  font-bold text-4xl lg:text-base">Support</a></li>
+                        <li><a href="#" class="text-white hover:text-green-600  font-bold text-4xl lg:text-base">Download</a></li>
+                            <!-- line --> <li><span class="w-7 h-0.5 block cursor-pointer lg:rotate-90 bg-white my-5"></span></li>
+                        <li><a href="#" class="text-white hover:text-green-600 font-semibold text-3xl lg:text-base">Sign up</a></li>
+                        <li><a href="#" class="text-white hover:text-green-600 font-semibold text-3xl lg:text-base">Log in</a></li>
+
                     </ul>
 
                 </div>
 
-                <button class="toggle-menu flex flex-col gap-1 border-none self-center background-transparent z-50 lg:hidden">
+                <!-- <button class="toggle-menu flex flex-col gap-1 border-none self-center background-transparent z-50 lg:hidden ">
+                    <span class="w-4 h-1 cursor-pointer bg-white rotate-45"></span>
+                    <span class="w-4 h-1 cursor-pointer bg-white -rotate-45"></span>
+                </button> -->
+
+                <button class="toggle-menu flex flex-col gap-1 border-none self-center background-transparent z-50 lg:hidden ">
                     <span class="w-6 h-0.5 block cursor-pointer mb-1 bg-white"></span>
                     <span class="w-6 h-0.5 block cursor-pointer mb-1 bg-white"></span>
                     <span class="w-6 h-0.5 block cursor-pointer mb-1 bg-white"></span>
+
                 </button>
     
             </nav>      
         </div>
     </header>
+
 <!-- 
     <section class="banner bg-[#C5F0C9] ">
         <div class="container">
@@ -72,8 +80,8 @@
         </div>
     </section> -->
 
-    <section class="hero bg-blue-500">
-        <div class="container">
+    <section class="hero bg-blue-500 p-5">
+        <div class="container p-5">
             <div class="hero____content  px-5 pt-5 lg:ml-10 lg:justify-start lg:py-20">
                 <h1 class="text-3xl font-bold text-[#fff] mb-4 lg:text-5xl">Get Premium free for 1 month</h1>
                 <h3 class="text-lg lg:text-2xl font-semibold text-[#fff] mb-8">Only $9.99/month after. Cancel anytime.</h3>
@@ -82,16 +90,16 @@
 
                     <a href="#plans"><div class="btn px-8 rounded-full hover:scale-105 bg-blue-500 hover:bg-blue-700 font-bold border-2 border-[#fff] text-[#fff] text-center py-3 mb-9">VIEW PLANS</div></a>
                 </div>  
-                <p class="text-xs text-[#fff] mb-20 "><a href="#" class="underline">Terms and conditions apply.</a>  1 month free not available for users who have already tried Premium.</p>  
+                <p class="text-xs text-[#fff]"><a href="#" class="underline">Terms and conditions apply.</a>  1 month free not available for users who have already tried Premium.</p>  
             </div>
         </div>
     </section>
     
 
-<section class="premium">
+<section class="premium p-5">
     <div class="container">
-        <div class="">
-            <h1 class="text-3xl text-center font-bold p-8">Why go Premium?</h1>
+        <div class="p-8">
+            <h1 class="text-3xl text-center font-bold">Why go Premium?</h1>
         <div class="flex flex-col gap-[2rem] lg:grid lg:grid-cols-4">
             
             <div class="item flex flex-cols-2 m-5 lg:grid lg:place-content-center">
@@ -154,6 +162,7 @@
         
     </div>
 </section>
+
 <!-- 
 <section class="premium-2 px-50 ">
     <div class="container">
@@ -172,9 +181,9 @@
     </div>
 </section> -->
 
-<section class="plans bg-[#dddddd] " id="plans">
+<section class="plans bg-[#dddddd] p-5" id="plans">
     <div class="container">
-        <div class="sm:px-10 lg:px-20 lg:p-10">
+        <div class="px-10 lg:px-20 p-10">
             <div class="title mb-2">
                 <h1 class="text-2xl font-bold text-center mb-2">Pick your Premium</h1>
                 <h4 class="text-center">Listen without limits on your phone, speaker, and other devices.</h4>
@@ -286,7 +295,7 @@
 </section>
 
 
-<footer class="footer-2 bg-black">
+<footer class="footer-2 bg-black p-5">
     <div class="container">
 
         <div class="lg:flex lg:justify-between pt-7 p-5">
